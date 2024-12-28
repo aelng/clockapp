@@ -24,8 +24,6 @@ body{
 }
 
 .clock{
-
-    
     font-size: 6rem;
     font-weight: bold;
     font-family: monospace;
@@ -33,31 +31,64 @@ body{
     text-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.75)
 }
 
-.option {
+
+
+.option-icon {
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.25%;
+  margin-top: 0.25%;
+}
+
+.option:hover {
+    transition: width 200ms ease;
+    transition: height 200ms ease;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
     color: white;
-    gap: 3em;
-    margin-left: 1.5%;
-    margin-top: 2%;
+    gap: 1em;
+    margin-left: 0.5%;
+    margin-top: 0.25%;
     font-size: 1rem;
     font-weight: bold;
     font-family: monospace;
-    text-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.75)
+    text-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.75);
+    width: 16em;
+    padding-left: 2em;
+    height: 20vh;
+    position: fixed;
+    background-color: hsla(28, 65%, 9%, 0.75);
 }
 
 .option-color {
-  display: flex;
+  display: none;
+  width: 13em;
   flex-direction: row;
   justify-content: space-evenly;
-  gap: 1em
+  gap: 1em;
+
 }
 
 .option-zone {
-  display: flex;
+  display: none;
+  width: 13em;
   flex-direction: row;
   justify-content: space-evenly;
-  gap: 1em
+  gap: 1em;
+
+}
+
+.option:hover .option-zone {
+  display: flex;
+}
+
+.option:hover .option-color {
+  display: flex;
+}
+
+.option:hover .option-icon {
+  display: none;
 }

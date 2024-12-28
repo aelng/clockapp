@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { FaAlignJustify } from "react-icons/fa";
 
 function DigitalClock (){
 
@@ -84,7 +85,9 @@ function DigitalClock (){
 
     return (
         <>
+            
             <div className="option">
+            <FaAlignJustify className="option-icon"/>
                 <div className="option-color">
                     <label>Select a Color:</label>
                     <input type="color" value = {color} onChange={handleColorChange}/>
@@ -105,8 +108,6 @@ function DigitalClock (){
                     </div>
                 </div>
             </div>
-
-            
         </>
     );
 }
